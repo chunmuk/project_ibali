@@ -1,0 +1,471 @@
+/* commen Area */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #000;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f6f9fb;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Header Area */
+.header {
+  background: #00aeef;
+  height: 70px;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+.top {
+  width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.logo a {
+  background: url(../images/logo.jpg) no-repeat;
+  width: 150px;
+  height: 70px;
+  text-indent: -9999px;
+  display: block;
+}
+
+.top ul {
+  position: absolute;
+  right: 0;
+  top: 23px;
+}
+
+.top ul li {
+  float: left;
+  margin-left: 20px;
+  font-size: 1.1rem;
+}
+
+.top li a {
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  padding: 6px 20px;
+  transition: 0.2s;
+}
+
+.top li a:hover {
+  background: #ffa805;
+}
+
+
+/* Section Top Area */
+.section_top {
+  padding-top: 40px;
+  width: 100%;
+  height: 300px;
+  background: url(../images/surfing.jpg) no-repeat center center;
+  background-size: cover;
+  min-width: 1000px;
+}
+
+.main_txt {
+  width: 1000px;
+  height: 230px;
+  margin: auto;
+  position: relative;
+  top: 30px;
+}
+
+fieldset {
+  border : none;
+}
+  
+fieldset > legend {
+    text-indent: -9999px;
+}
+  
+fieldset > label {
+    display: block;
+    text-indent: -9999px;
+}
+
+form.box {
+  width: 600px;
+  position: absolute;
+  top: 41%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+form.box input {
+  border: none;
+  padding: 24px;
+}
+
+form.box input[type=text] {
+  width: 450px;
+  background-color: #fff;
+  border-radius: 50px 0 0 50px;
+}
+
+form.box input[type=submit] {
+  width: 150px;
+  background-color: #ffa805;
+  border-radius: 0 50px 50px 0;
+  color: #fff;
+  margin-left: -6px;
+  }
+
+
+ /* GNB Area*/
+ .hidden {
+  position: absolute;
+  text-indent: -9999px;
+}
+
+.gnb {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #c5c5c5;
+  width: 1000px;
+  height: 180px;
+  margin: 0 auto;
+}
+
+.gnb > .allMenu {
+  width: 170px;
+  height: 150px;
+  margin: 23px 0;
+}
+
+.gnb > .allMenu li {
+  border: 1px solid #c5c5c5;
+  border-radius: 12px;
+  margin: 2px;
+  width: 170px;
+  height: 128px;
+  text-align: center;
+  line-height: 128px;
+  font-size: 1.3rem;
+}
+
+.gnb > .etcMenu {
+  margin: 23px 10px;
+  width: 830px;
+  height: 120px;
+}
+
+.gnb .etcMenu li {
+  border: 1px solid #c5c5c5;
+  border-radius: 12px;
+  margin: 2px;
+  text-align: center;
+  line-height: 40px;
+  float: left;
+  width: 131px;
+  height: 40px;
+}
+
+.gnb li a {
+  border-radius: 12px;
+  color : #424649;
+  display: block;
+}
+
+.gnb a:hover {
+  transition: 0.2s;
+  background-color: #ffa805;
+}
+
+
+/* Option Area */
+.option_section {
+  border: 1px solid #f6f9fb;
+  margin: 25px 0;
+}
+.option_section .option{
+  width: 1000px;
+  margin: auto;
+}
+
+.option a {
+  border: 1px solid #c7c7c7; 
+  width: 235px;
+  height: 235px;
+  display: block;
+  float: left;
+  margin: 0 20px 20px 0;
+  overflow: hidden;
+  background-color: #fff;
+  transition: 0.2s;
+}
+
+.option a:hover {
+  border: 5px solid #2273ba;
+}
+.option a:nth-child(4n) {
+  margin-right: 0;
+}
+
+.option a:last-child {
+  margin-bottom: 130px;
+} 
+
+.option a div {
+  width: 235px;
+  height: 150px;
+  background-size: cover;
+  margin-bottom: 12px;
+}
+
+.option a p {
+  text-align: center;
+  line-height: 30px;
+  font-size: 1.1rem;
+}
+.option a p:nth-child(3) {
+  color: red;
+}
+
+.option_section .detail{
+  width: 1000px;
+  margin: -27px auto;
+}
+
+.detail > div {
+  width: 1000px;
+}
+
+.detail_image {
+  width: 490px;
+  height: 360px;
+  border: 1px solid #c5c5c5;;
+  margin-right: 20px;
+  float: left;
+}
+
+.option_booking {
+  display: block;
+  width: 490px;
+  height: 360px;
+  float: right;
+}
+
+.option_booking h2 {
+  margin-bottom: 10px;
+}
+
+.option_booking p {
+  margin: 10px 0 10px 0;
+  font-size: 1.1rem;
+}
+
+.option_booking span {
+  color: red;
+}
+
+.option_booking label {
+  margin: 10px 0 10px 0;
+  font-size: 1.1rem;
+}
+
+.option_booking input {
+  margin: 10px 0 10px 20px;;
+  width: 144px;
+  height: 25px;
+  text-align: center;
+}
+
+.option_booking select {
+  margin: 10px 0 10px 13px;
+  width: 397px;
+  height: 25px;
+}
+
+.totalBox {
+  display: block;
+  margin-top: 15px;
+  right: 0;
+  margin: 10 auto;
+}
+
+#totalPrice {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.BtnBox {
+  display: inline-block;
+  margin-top: 14px;
+  width: 490px;
+  height: 50px;
+}
+
+.marketBtn, .bookingBtn {
+  border-radius: 10px;
+  outline: none;
+  width : 230px;
+  height : 46px;
+  font-size: 1rem;
+  }
+  
+.marketBtn {
+  margin-right: 21px;
+  background-color: #424649;
+  color: white;
+  border: 2px solid #3b3d3f;
+  }
+
+.bookingBtn {
+  background-color: #2273ba;
+  color: white;
+  border: 2px solid #1463a8;
+}
+
+.manual {
+  clear: both;
+  width: 1000px;
+  padding: 30px 0 0 30px;
+  margin-bottom: 130px;
+}
+
+.manual > ul {  
+  display: flex;
+  justify-content: space-between;
+
+}
+.manual > ul > button {
+  width: 33.3%;
+  height: 44px;
+  border: 1px solid;
+  float: left;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  background-color: #424649;
+  font-size: 1rem;
+}
+
+.manual > ul > button:first-child {
+  background-color: #ffa805;
+}
+
+.desc, .howToUse, .refund{
+  width: 950px;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+
+.manual > div > h3 {
+  color: #2273ba;
+  margin: 40px 0 10px 0;
+}
+
+.manual > div > h4 {
+  color: red;
+  font-weight: normal;
+  margin: 30px 0 5px;
+}
+
+.manual > div > ul > li {
+  list-style: disc;
+  margin-left : 22px;
+  line-height: 28px;
+  font-size: 0.95rem;
+}
+
+.howToUse {
+  display: none;
+}
+
+.refund {
+  display: none;
+}
+
+/* Footer Area */
+.footer {
+  clear: both;
+  background: #d9eff7;
+  min-width: 1000px;
+}
+
+.footer_top {
+  width: 1000px;
+  margin: auto;
+}
+
+.footer h2 {
+  position: absolute;
+  text-indent: -9999px;
+}
+
+.term {
+  height: 70px;
+}
+
+.term li {
+  line-height: 70px;
+  float: left;
+  margin-right: 18px
+}
+
+.term li:after {
+  content: "|";
+  padding-left: 18px;
+  color: #424649;
+}
+.term li:last-child {
+  margin-right: 0;
+}
+
+.footer_bottom {
+  width: 1000px;
+  height: 200px;
+  margin: auto;
+  position: relative;
+  margin-top: 20px;
+}
+
+.logo_bottom, .info {
+  margin: 0px 0 70px;
+  display: inline-block;
+  vertical-align: center;
+}
+
+.info {
+  margin-left: 25px;
+  line-height: 30px;
+  position: absolute;
+}
+
+.info p {
+  color: #424649;
+}
+
+.info p:first-child {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+address {
+  font-style: normal;
+  color: #424649;
+}
+.info .number {
+  padding-top: 15px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.info .number span {
+  font-size: 16px;
+  color: #424649;
+}
